@@ -1,0 +1,97 @@
+{
+  "schema_version": "2.0",
+  "scope": {
+    "target": "Operador sparsemax proyectando vectores reales al simplex, NO modelo de atención/clasificador ni sparsemax loss ni entrenamiento",
+    "kind": "component",
+    "out_of_scope": [
+      "Loss de sparsemax, ecuaciones 19-20",
+      "Modelos completos de clasificación, sección 4",
+      "Reproducción de métricas de artículos",
+      "TensorFlow en runtime, pendiente de instalar"
+    ]
+  },
+  "equations": [
+    {
+      "id": "sparsemax_projection_eq2_3_4",
+      "source_section": "2.1-2.2, Eqs. (2),(3),(4), Alg. 1",
+      "expression": "sparsemax(z) = argmin_{p>=0, Σp=1} ||p-z||² ; p_i=max(z_i-tau(z),0), tau=(Σ_{j<=k} z_(j)-1)/k, k=max{k:1+k*z_(k)>Σ_{j<=k} z_(j)}",
+      "symbols": {
+        "z": "vector de scores",
+        "p": "probabilidades proyectadas",
+        "tau": "umbral",
+        "k": "soporte activo"
+      },
+      "assumptions": [
+        "z es real finito",
+        "último eje de longitud K>=1",
+        "float64 para tests estrictos",
+        "ordenación descendente",
+        "puntos no diferenciables quedan fuera de gradcheck"
+      ],
+      "input_shapes": {
+        "z": "(...,K)"
+      },
+      "output_shape": "(...,K)",
+      "implementation": "sparsemax.py",
+      "reference_implementation": "sparsemax.py",
+      "test_file": "tests/test_sparsemax.py",
+      "status": "verified"
+    },
+    {
+      "id": "sparsemax_jacobian_eq12",
+      "source_section": "2.5, Eq. (12)",
+      "expression": "J_s(z)=Diag(s)-s*s^T/|S(z)|, s_i=1 si sparsemax(z)_i>0",
+      "symbols": {
+        "J": "Jacobiano",
+        "s": "indicador del soporte S"
+      },
+      "assumptions": [
+        "gradiente solo en regiones de soporte fijo; los cambios de soporte no son diferenciables"
+      ],
+      "input_shapes": {
+        "z": "(K,)"
+      },
+      "output_shape": "(K,K)",
+      "implementation": "sparsemax.py",
+      "reference_implementation": "sparsemax.py",
+      "test_file": "tests/test_sparsemax.py",
+      "status": "verified"
+    }
+  ],
+  "experiments": [],
+  "environment": {
+    "python": ">=3.10",
+    "dependencies": [
+      "numpy>=1.24",
+      "torch (opcional)",
+      "scipy (opcional, test de optimización)",
+      "tensorflow (opcional, tests pendientes)"
+    ],
+    "seed": 160202068,
+    "hardware": "CPU, numpy y torch"
+  },
+  "unknowns": [
+    "TensorFlow no disponible para ejecutar tests",
+    "No hay reproducción experimental de datasets o medidas del artículo",
+    "El jacobiano en los puntos de cambio de soporte no es único",
+    "No se ha medido rendimiento GPU ni grandes tamaños"
+  ],
+  "evidence": {
+    "claim_level": "componente_verificado",
+    "independent_reference": true,
+    "reported_experiments": false
+  },
+  "source": {
+    "type": "preprint",
+    "title": "From Softmax to Sparsemax: A Sparse Model of Attention and Multi-Label Classification",
+    "identifier": "1602.02068v2",
+    "url": "https://arxiv.org/abs/1602.02068",
+    "local_path": null,
+    "version": "v2",
+    "version_verified": true,
+    "source_accessed_at": "2026-10-25",
+    "primary_source": "https://arxiv.org/html/1602.02068v2#S2",
+    "authors_code_url": null,
+    "license_reviewed": true
+  }
+}
