@@ -1,0 +1,70 @@
+{
+  "schema_version": "2.0",
+  "scope": {
+    "target": "Solo la ecuación (1): atención de producto escalar escalado, con una opción de máscara documentada",
+    "kind": "component",
+    "out_of_scope": [
+      "Transformer completo",
+      "Atención multi-cabeza",
+      "Entrenamiento WMT",
+      "Resultados BLEU"
+    ]
+  },
+  "equations": [
+    {
+      "id": "attention_eq_1",
+      "source_section": "3.2.1, Eq. (1)",
+      "expression": "Attention(Q,K,V) = softmax(Q K^T / sqrt(d_k)) V",
+      "symbols": {
+        "Q": "queries",
+        "K": "keys",
+        "V": "values",
+        "d_k": "dimensión de clave/consulta"
+      },
+      "assumptions": [
+        "Tq,Tk,dk,dv > 0",
+        "mismo prefijo de lote",
+        "softmax en eje de claves",
+        "máscara True=permitido; filas totalmente enmascaradas fuera de dominio"
+      ],
+      "input_shapes": {
+        "Q": "(...,Tq,dk)",
+        "K": "(...,Tk,dk)",
+        "V": "(...,Tk,dv)"
+      },
+      "output_shape": "(...,Tq,dv)",
+      "implementation": "attention.py",
+      "reference_implementation": "attention.py",
+      "test_file": "tests/test_attention.py",
+      "status": "verified"
+    }
+  ],
+  "experiments": [],
+  "environment": {
+    "python": ">=3.10",
+    "dependencies": [
+      "numpy>=1.24"
+    ],
+    "seed": 314159,
+    "hardware": "CPU NumPy"
+  },
+  "unknowns": [],
+  "evidence": {
+    "claim_level": "componente_verificado",
+    "independent_reference": true,
+    "reported_experiments": false
+  },
+  "source": {
+    "type": "preprint",
+    "title": "Attention Is All You Need",
+    "identifier": "1706.03762v7",
+    "url": "https://arxiv.org/abs/1706.03762",
+    "local_path": null,
+    "version": "v7",
+    "version_verified": true,
+    "source_accessed_at": "2026-10-25",
+    "primary_source": "https://arxiv.org/html/1706.03762v7#S3.SS2.SSS1",
+    "authors_code_url": null,
+    "license_reviewed": true
+  }
+}

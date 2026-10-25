@@ -1,0 +1,124 @@
+{
+  "skill_name": "research-to-code",
+  "note": "Escenarios para evaluar uso de la misma Skill por Codex, OpenCode y Claude Code. Ninguna invocación end-to-end a esos clientes se da por ejecutada; criterios listos para revisión humana.",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Implementa en NumPy la ecuación de scaled dot-product attention de https://arxiv.org/abs/1706.03762 y demuestra con tests que no confundiste sqrt(d_k) con d_k. No me des el Transformer completo.",
+      "expected_output": "Contrato con shapes, código vectorizado y referencia por bucles, tests y afirmación limitada al operador",
+      "files": [],
+      "assertions": [
+        "Cita versión/sección/ecuación",
+        "Contiene factor 1/sqrt(d_k)",
+        "Compara al menos un oráculo independiente",
+        "No afirma reproducir BLEU"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Mi especificación técnica local define y_i = sumatorio_j A_ij x_j con A de tamaño (n,m). Tradúcela a Python y verifica un ejemplo de dos filas y dos columnas y formas de salida.",
+      "expected_output": "for con solo índice j contra A @ x; no reduce eje i; test de shapes",
+      "files": [],
+      "assertions": [
+        "Conserva índice libre i",
+        "Incluye referencia y vectorización",
+        "Test numérico independiente"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Reproduce el resultado principal de un artículo técnico cuyo conjunto de datos y semilla no están disponibles. Haz código y explica qué puedes verificar y qué no.",
+      "expected_output": "Explica imposibilidad de sostener reproducción; ofrece tests parciales sin inventar métricas",
+      "files": [],
+      "assertions": [
+        "No inventa resultados",
+        "Distingue parte implementada de reproducción",
+        "Lista datos no disponibles"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Implementa E_p[X] donde X=[2,10] y p=[0.9,0.1]; compáralo con media sin ponderar y haz un test que detecte la confusión.",
+      "expected_output": "Ponderación correcta 2.8 y media 6.0; prueba automatizable; suma pesos 1",
+      "files": [],
+      "assertions": [
+        "Calcula 2.8",
+        "Identifica que 6.0 no es esperanza ponderada",
+        "Testa p.sum()==1"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Dime la fecha en que se publicó este libro, sin implementar código ni algoritmos.",
+      "expected_output": "No activar la skill de implementación; solo fecha del artículo",
+      "files": [],
+      "assertions": [
+        "No genera proyecto de código ni framework reproducible innecesario"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "Implementa Eq.1 de arXiv:1706.03762 exclusivamente en PyTorch, con tensores diferenciables, máscara True=permitido, gradcheck en float64 y comparación independiente con bucles NumPy.",
+      "expected_output": "Código torch real, gradientes verificados, equivalencia y prueba negativa de escalado",
+      "files": [],
+      "assertions": [
+        "torch.Tensor y torch.softmax",
+        "torch.autograd.gradcheck",
+        "Compara con oráculo independiente",
+        "Reporta backend y versiones"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Implementa y_i = Σ_j A_ij x_j en TensorFlow 2 y Eq.1 de 1706.03762; incluye GradientTape, tf.function, validador de máscara booleana y pruebas de NumPy independientes. Si tensorflow no está instalado, no declares pruebas TensorFlow aprobadas.",
+      "expected_output": "Código TensorFlow real con tf.einsum, tf.nn.softmax, GradientTape y pruebas grafo, con estado veraz",
+      "files": [],
+      "assertions": [
+        "TensorFlow en lugar de NumPy disfrazado",
+        "tf.GradientTape y tf.function",
+        "Shape y máscara",
+        "Skipped no equivale a PASS"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Implementa arXiv:1602.02068v2 Sparsemax, ecuaciones (2)-(4) y jacobiano (12), en NumPy, PyTorch y TensorFlow. Contrasta con un algoritmo numérico independiente, comprueba pertenencia al simplex, invariancia a traslación y gradientes lejos de puntos no diferenciables.",
+      "expected_output": "Código nativo separado de los tres frameworks, trazabilidad, tests y límites de los gradientes; tests omitidos comunicados.",
+      "files": [],
+      "assertions": [
+        "No confundir sparsemax con softmax",
+        "Controles independientes de simplex/argmin",
+        "No usar gradcheck justo en cambios de soporte",
+        "No afirmar TF ejecutado si falta",
+        "No afirmar reproducción experimental"
+      ]
+    },
+    {
+      "id": 9,
+      "prompt": "A partir de un manual técnico disponible solo como PDF local, implementa en NumPy una recurrencia x[t+1]=a*x[t]+u[t]. No inventes la semántica del índice ni declares pruebas ejecutadas si no tienes acceso al archivo.",
+      "expected_output": "Trazabilidad a página del PDF, contraste con bucle, casos borde y evidencia limitada",
+      "files": [],
+      "assertions": [
+        "No requiere identificador de repositorio de preprints",
+        "Separa evidencia leída de hipótesis",
+        "Tests sobre t=0 y límites"
+      ]
+    },
+    {
+      "id": 10,
+      "prompt": "Tengo la segunda edición de un libro de álgebra lineal con un algoritmo de sustitución hacia delante. Conviértelo en código PyTorch, comprueba gradientes donde proceda e identifica qué edición y página has usado.",
+      "expected_output": "Implementación desde libro sin asumir URL; pruebas con sistema triangular y datos degenerados",
+      "files": [],
+      "assertions": [
+        "Admite ISBN/edición/página",
+        "No afirma haber leído libro no suministrado",
+        "Controla diagonal cero y shapes"
+      ]
+    }
+  ],
+  "target_agents": [
+    "codex",
+    "opencode",
+    "claude-code"
+  ]
+}
