@@ -1,0 +1,18 @@
+{
+  "skill": "flask-async-backend",
+  "notes": "Escenarios para evaluar activación y cumplimiento; no son afirmaciones de ejecución en agentes.",
+  "scenarios": [
+    {"prompt": "Quiero añadir un endpoint Flask-Smorest async que consulte usuarios con AsyncSession sin tocar manager_db.", "should_activate": true, "checks": ["consulta ejemplos/router/controller", "await ORM", "respeta sesión por operación"]},
+    {"prompt": "Tengo RuntimeError: Task got Future attached to a different loop en Flask async con SQLAlchemy.", "should_activate": true, "checks": ["analiza NullPool y loops", "no cambia a pool persistente por defecto"]},
+    {"prompt": "Modifica POST /login/register para mantener rol admin y usar await db.commit().", "should_activate": true, "checks": ["mantiene auth+rol", "no rompe HTTP 201/401/403/409"]},
+    {"prompt": "Añade un modelo SQLAlchemy asíncrono y una migración Alembic a Flask.", "should_activate": true, "checks": ["revisa modelos/migraciones", "no create_all productivo", "tests DB"]},
+    {"prompt": "Flask async: quiero correr con Hypercorn y WsgiToAsgi en Windows.", "should_activate": true, "checks": ["explica WSGI vs ASGI", "comando de arranque correcto"]},
+    {"prompt": "Mi CLI Click async falla porque llamé asyncio.run() desde una vista Flask.", "should_activate": true, "checks": ["distingue CLI sync vs view async", "no asyncio.run en vista"]},
+    {"prompt": "Audita el ZIP de mi backend Flask asíncrono por CSRF y API key en query.", "should_activate": true, "checks": ["advierte deuda de seguridad", "no presenta auditoría estática como concluyente"]},
+    {"prompt": "Escribe tests para Flask test_client con SQLite aiosqlite, JWT, cookies y roles.", "should_activate": true, "checks": ["reutiliza tests/conftest", "tests de auth y DB"]},
+    {"prompt": "Quiero un backend Flask puro síncrono con create_engine y sessionmaker.", "should_activate": false, "checks": ["prefiere flask-backend síncrona"]},
+    {"prompt": "Crea una API nativa ASGI con FastAPI, lifespan y Pydantic.", "should_activate": false, "checks": ["prefiere skill FastAPI"]},
+    {"prompt": "Diseña una pantalla React con Tailwind.", "should_activate": false, "checks": ["no activar"]},
+    {"prompt": "Ayúdame a crear una presentación de ventas.", "should_activate": false, "checks": ["no activar"]}
+  ]
+}

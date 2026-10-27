@@ -1,0 +1,283 @@
+{
+  "origin_zip": "flask-async-sqlalchemy-proyecto-completo.zip",
+  "reference_root": "flask-async-main/backend_async/",
+  "copy_policy": "copied byte-for-byte; no modifications to source examples",
+  "files": [
+    {
+      "source_path": "flask-async-main/README.md",
+      "skill_path": "examples/project-root-README.md",
+      "sha256": "ea6991a349de84643dbe78316c618fc126d1043f3ab48b631bcb5c14f1b5f0ea",
+      "bytes": 1273
+    },
+    {
+      "source_path": "flask-async-main/backend_async/.env.example",
+      "skill_path": "examples/backend_async/.env.example",
+      "sha256": "051fa535f1a7336a7e7563d3238f457928b07eab21f740fcacff4ec3d5f8141d",
+      "bytes": 667
+    },
+    {
+      "source_path": "flask-async-main/backend_async/.gitignore",
+      "skill_path": "examples/backend_async/.gitignore",
+      "sha256": "2f2d81e70b3c7bc68f64ff9b615255f90a1d9684d14c31a3ab387ae7497ff2d4",
+      "bytes": 120
+    },
+    {
+      "source_path": "flask-async-main/backend_async/CONVERSION_REPORT.json",
+      "skill_path": "examples/backend_async/CONVERSION_REPORT.json",
+      "sha256": "2a3bf4a8c09a62ba212cddad2467e151485bc8dd756c9c60841f95b0a4751b00",
+      "bytes": 1049
+    },
+    {
+      "source_path": "flask-async-main/backend_async/README.md",
+      "skill_path": "examples/backend_async/README.md",
+      "sha256": "ab5e4b440d092ecb8198bb218ce45dd72005c554e416ac97d6ef36d04e3978c5",
+      "bytes": 5367
+    },
+    {
+      "source_path": "flask-async-main/backend_async/alembic.ini",
+      "skill_path": "examples/backend_async/alembic.ini",
+      "sha256": "043b349cbc00d76af99639b558e38c93795a0d651004b34a3bc1ab42c9b66ac7",
+      "bytes": 546
+    },
+    {
+      "source_path": "flask-async-main/backend_async/migrations/README.md",
+      "skill_path": "examples/backend_async/migrations/README.md",
+      "sha256": "32095309b139a2c090da40d2d346f64d48e8e587bb4c151d2bccd44a10a69454",
+      "bytes": 527
+    },
+    {
+      "source_path": "flask-async-main/backend_async/migrations/env.py",
+      "skill_path": "examples/backend_async/migrations/env.py",
+      "sha256": "15d784644209fe215c32ea1bd0d66dc7f04f00ac9a52ce6027edbc9bc83072a7",
+      "bytes": 1455
+    },
+    {
+      "source_path": "flask-async-main/backend_async/migrations/script.py.mako",
+      "skill_path": "examples/backend_async/migrations/script.py.mako",
+      "sha256": "9e4ffdacdeffd4bdef1251bd989ce1471c2e5d5bd1ad9b250bc20f78640feeb3",
+      "bytes": 608
+    },
+    {
+      "source_path": "flask-async-main/backend_async/migrations/versions/20261027_01_baseline.py",
+      "skill_path": "examples/backend_async/migrations/versions/20261027_01_baseline.py",
+      "sha256": "2c62f5f6616015137aea7ea846f491aa84655490f668f99dc83d15dc3fd6786e",
+      "bytes": 880
+    },
+    {
+      "source_path": "flask-async-main/backend_async/requirements-dev.txt",
+      "skill_path": "examples/backend_async/requirements-dev.txt",
+      "sha256": "1adfba153b6b99fcc69116eb9f9d2eca01ad8268db50bc604389ff00d3eda94d",
+      "bytes": 90
+    },
+    {
+      "source_path": "flask-async-main/backend_async/requirements.txt",
+      "skill_path": "examples/backend_async/requirements.txt",
+      "sha256": "77b4e7e452f990a6ab0f64d204ca21ea56103b0e5dda29e8f166b48549aa0d59",
+      "bytes": 393
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/__init__.py",
+      "skill_path": "examples/backend_async/src/__init__.py",
+      "sha256": "47d9ebd92b515db47481d78ff6e5766a06639685d05b1fbcca37cc520367a55a",
+      "bytes": 45
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/applications/__init__.py",
+      "skill_path": "examples/backend_async/src/applications/__init__.py",
+      "sha256": "cae57f2f65ddb174da2db2bdd3d5b6a7321a0e0d9a9ad44872dfa5a18ae1bfa2",
+      "bytes": 49
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/applications/home/__init__.py",
+      "skill_path": "examples/backend_async/src/applications/home/__init__.py",
+      "sha256": "472b058b1eeb0d97573cc361c8fd876c5a69fe18818d5441a15fae722e46e26f",
+      "bytes": 26
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/applications/home/router.py",
+      "skill_path": "examples/backend_async/src/applications/home/router.py",
+      "sha256": "2b1e158ed7c4a302a15243291932eb89fd3598d570f587014970d214685c67d8",
+      "bytes": 672
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/applications/login/__init__.py",
+      "skill_path": "examples/backend_async/src/applications/login/__init__.py",
+      "sha256": "a0cac5f72587ede7ccb5f76ec4980c016e1a63b9c4570dedd0cfde819f1b33ea",
+      "bytes": 41
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/applications/login/controller.py",
+      "skill_path": "examples/backend_async/src/applications/login/controller.py",
+      "sha256": "4134a42e6052181e7088934357bfa9b61da2ad736307603c07fc40d0d08184b3",
+      "bytes": 1644
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/applications/login/router.py",
+      "skill_path": "examples/backend_async/src/applications/login/router.py",
+      "sha256": "3184ad0a4914c02065f3cb388e88c0b497ad9054fcf0d3ed8b34c6ac20950d2c",
+      "bytes": 2158
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/applications/login/schemas.py",
+      "skill_path": "examples/backend_async/src/applications/login/schemas.py",
+      "sha256": "7feee20d2d350fbac5c1844d5c13042cfae16f4976e5dd1a5ca669b0a4ddb630",
+      "bytes": 433
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/applications/users/__init__.py",
+      "skill_path": "examples/backend_async/src/applications/users/__init__.py",
+      "sha256": "c85ca54185eba872780f3539e821deb3ab64771b468dffea253d97d42637c8dd",
+      "bytes": 34
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/applications/users/controller.py",
+      "skill_path": "examples/backend_async/src/applications/users/controller.py",
+      "sha256": "e14992724e56f96dd2a112bd727773ba7827d7f296a56b281fe0d808f04f7eec",
+      "bytes": 182
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/applications/users/router.py",
+      "skill_path": "examples/backend_async/src/applications/users/router.py",
+      "sha256": "d286001eb25fde70c2de14e639ef26a768668cee36259c86fd157c5c7b73f7e0",
+      "bytes": 826
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/applications/users/schemas.py",
+      "skill_path": "examples/backend_async/src/applications/users/schemas.py",
+      "sha256": "de43df293161918dc4d7bd0013e6273dff651a98172cd698f68722134925e6f7",
+      "bytes": 111
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/asgi.py",
+      "skill_path": "examples/backend_async/src/asgi.py",
+      "sha256": "12c0eb0872eea2bbfae64cb3b9879c668d6e29a7fd9257da78b6ccf802b37e44",
+      "bytes": 275
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/core/__init__.py",
+      "skill_path": "examples/backend_async/src/core/__init__.py",
+      "sha256": "ee5ef37c4b5c9db6036bdcfb2547abff58901fff070db1e4419fb92e6415fa65",
+      "bytes": 76
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/core/commands.py",
+      "skill_path": "examples/backend_async/src/core/commands.py",
+      "sha256": "199814373f1ab31be150ad2c14ed18fa9ec566388a79d127133c4098af3a211e",
+      "bytes": 2253
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/core/manager_db.py",
+      "skill_path": "examples/backend_async/src/core/manager_db.py",
+      "sha256": "76e17b6b26806ffc3ae4364e65f507f01086b67b8802b2a63cedd7ac1f20f04b",
+      "bytes": 2237
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/core/models/__init__.py",
+      "skill_path": "examples/backend_async/src/core/models/__init__.py",
+      "sha256": "b9a3a5a4e4c13e32fdb0b2771fd8d1bac29ce6f4a700428d071e9e535c1a0a86",
+      "bytes": 248
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/core/models/base.py",
+      "skill_path": "examples/backend_async/src/core/models/base.py",
+      "sha256": "180db3b109b83965600a9dd7f7b18d1053f8b481526c98b3c6add4c729c9d8bb",
+      "bytes": 137
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/core/models/sessions.py",
+      "skill_path": "examples/backend_async/src/core/models/sessions.py",
+      "sha256": "31d9a436296a589eb3693236049f3a5ae0816155eacbe60b8dd881aafaaad470",
+      "bytes": 539
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/core/models/users.py",
+      "skill_path": "examples/backend_async/src/core/models/users.py",
+      "sha256": "c0f338a895030a1ac05d5eb266e76c2234503a201c9f21a0e5f9dbc8e387bbf4",
+      "bytes": 482
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/core/security.py",
+      "skill_path": "examples/backend_async/src/core/security.py",
+      "sha256": "154dd87cab1d3b7c866ebea60c0147ca92e81a1205d60770bed9ab64bbee0fcd",
+      "bytes": 4413
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/core/session_cleanup.py",
+      "skill_path": "examples/backend_async/src/core/session_cleanup.py",
+      "sha256": "5605052cbb546df9f134d35bf4fdb5384dfed741328be96c5019b3fc8c30c4ba",
+      "bytes": 818
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/core/settings.py",
+      "skill_path": "examples/backend_async/src/core/settings.py",
+      "sha256": "b05aa71cc505d93d367a40dec7e7f92fbb9da254200632bf4708538686b7b0eb",
+      "bytes": 2348
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/main.py",
+      "skill_path": "examples/backend_async/src/main.py",
+      "sha256": "e98f3b605822059b519e9994e6fe378f92fc000fb8f67572a729187ca8c2888c",
+      "bytes": 2324
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/scripts/__init__.py",
+      "skill_path": "examples/backend_async/src/scripts/__init__.py",
+      "sha256": "5987b7bc390556d74af024248dee2f401539a88a689ba8198944289c9f2344b6",
+      "bytes": 53
+    },
+    {
+      "source_path": "flask-async-main/backend_async/src/scripts/cleanup_expired_sessions.py",
+      "skill_path": "examples/backend_async/src/scripts/cleanup_expired_sessions.py",
+      "sha256": "000242b0896a3f59c65c63543ec820cbce5691052ec7f0700151a5b5655684f4",
+      "bytes": 330
+    },
+    {
+      "source_path": "flask-async-main/backend_async/tests/__init__.py",
+      "skill_path": "examples/backend_async/tests/__init__.py",
+      "sha256": "a0758940354f9fdceddaea1c88cb5a675644961fba0bf2e71f46c1c37cc23ef7",
+      "bytes": 42
+    },
+    {
+      "source_path": "flask-async-main/backend_async/tests/conftest.py",
+      "skill_path": "examples/backend_async/tests/conftest.py",
+      "sha256": "7aeb0cab9055804e1e46b7e9ec76ab4805d0db3a845c3e9ff2a3482a83d1399c",
+      "bytes": 1561
+    },
+    {
+      "source_path": "flask-async-main/backend_async/tests/test_admin_cli.py",
+      "skill_path": "examples/backend_async/tests/test_admin_cli.py",
+      "sha256": "b1bb85e882f698461e59d1e54036d4ca6c908e4a8c4282bd1e79793a52e85cfc",
+      "bytes": 825
+    },
+    {
+      "source_path": "flask-async-main/backend_async/tests/test_auth.py",
+      "skill_path": "examples/backend_async/tests/test_auth.py",
+      "sha256": "9599c96c7bc2d521401fb62f6fadd210d842f7ab056ccac881c9e143bb5a3844",
+      "bytes": 3802
+    },
+    {
+      "source_path": "flask-async-main/backend_async/tests/test_database.py",
+      "skill_path": "examples/backend_async/tests/test_database.py",
+      "sha256": "e9d01a0191a6bf7fa3eadc844e1e067ce2e5f35e390c2171ae6f2d6944f7e7c6",
+      "bytes": 3141
+    },
+    {
+      "source_path": "flask-async-main/backend_async/validation/test_architecture_standalone.py",
+      "skill_path": "examples/backend_async/validation/test_architecture_standalone.py",
+      "sha256": "ea4a8d9eec7e00f753de20b642fdef8588cd6ea1c11ef253ec83e355a97d3d62",
+      "bytes": 2535
+    },
+    {
+      "source_path": "flask-async-main/backend_async/validation/test_async_settings_standalone.py",
+      "skill_path": "examples/backend_async/validation/test_async_settings_standalone.py",
+      "sha256": "efdd174244a66cbc043cf45f33e6f59b70508e9a7fbb377ff1e267ef8eb703bc",
+      "bytes": 1452
+    },
+    {
+      "source_path": "flask-async-main/backend_async/validation/test_sqlalchemy_standalone.py",
+      "skill_path": "examples/backend_async/validation/test_sqlalchemy_standalone.py",
+      "sha256": "cecedb663da1e112c6275b88cd440b062973680ec1d2b8fa2654812a60d14dc8",
+      "bytes": 1955
+    }
+  ]
+}
