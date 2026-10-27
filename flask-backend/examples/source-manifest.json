@@ -1,0 +1,218 @@
+{
+  "source_archive": "flask-estructura-fastapi-tipado-corregido.zip",
+  "source_prefix": "flask-main/backend_sync/",
+  "copied_unchanged": true,
+  "file_count": 42,
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "377597ac2cda89d68ebd899450e6730064b4a5555616190d1fdd9eac99eb9aef",
+      "bytes": 667
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "2f2d81e70b3c7bc68f64ff9b615255f90a1d9684d14c31a3ab387ae7497ff2d4",
+      "bytes": 120
+    },
+    {
+      "path": "README.md",
+      "sha256": "e56e2bdf46e5d55c19c83405fa30381cfea95d1cd44c01dc6f030e92427400af",
+      "bytes": 5051
+    },
+    {
+      "path": "alembic.ini",
+      "sha256": "043b349cbc00d76af99639b558e38c93795a0d651004b34a3bc1ab42c9b66ac7",
+      "bytes": 546
+    },
+    {
+      "path": "migrations/README.md",
+      "sha256": "32095309b139a2c090da40d2d346f64d48e8e587bb4c151d2bccd44a10a69454",
+      "bytes": 527
+    },
+    {
+      "path": "migrations/env.py",
+      "sha256": "2dcc33abb297eb0e58b19088df3f06a513d2a58a5963ad9f96ceb592e78ffb30",
+      "bytes": 1091
+    },
+    {
+      "path": "migrations/script.py.mako",
+      "sha256": "9e4ffdacdeffd4bdef1251bd989ce1471c2e5d5bd1ad9b250bc20f78640feeb3",
+      "bytes": 608
+    },
+    {
+      "path": "migrations/versions/20261027_01_baseline.py",
+      "sha256": "2c62f5f6616015137aea7ea846f491aa84655490f668f99dc83d15dc3fd6786e",
+      "bytes": 880
+    },
+    {
+      "path": "requirements-dev.txt",
+      "sha256": "c0c6962d4e6b713e65213e55ebf724f69a6f38ced209e5c3fc4571579b7f8e5a",
+      "bytes": 51
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "9d0ee76d5abc7d52d43f20f5409e6d8441f2e1cc55426efc221f5d2934a56840",
+      "bytes": 381
+    },
+    {
+      "path": "src/__init__.py",
+      "sha256": "47d9ebd92b515db47481d78ff6e5766a06639685d05b1fbcca37cc520367a55a",
+      "bytes": 45
+    },
+    {
+      "path": "src/applications/__init__.py",
+      "sha256": "cae57f2f65ddb174da2db2bdd3d5b6a7321a0e0d9a9ad44872dfa5a18ae1bfa2",
+      "bytes": 49
+    },
+    {
+      "path": "src/applications/home/__init__.py",
+      "sha256": "472b058b1eeb0d97573cc361c8fd876c5a69fe18818d5441a15fae722e46e26f",
+      "bytes": 26
+    },
+    {
+      "path": "src/applications/home/router.py",
+      "sha256": "7d6296e6ed3c6843a59d61fda459f940a4c1ae12b2f0a2c2d2476d9f92d9305d",
+      "bytes": 654
+    },
+    {
+      "path": "src/applications/login/__init__.py",
+      "sha256": "a0cac5f72587ede7ccb5f76ec4980c016e1a63b9c4570dedd0cfde819f1b33ea",
+      "bytes": 41
+    },
+    {
+      "path": "src/applications/login/controller.py",
+      "sha256": "91e0aa4ea72ea4b22d0e71bb9c365b97cf2791a715134a62786bb5f13ab369b0",
+      "bytes": 1520
+    },
+    {
+      "path": "src/applications/login/router.py",
+      "sha256": "a23ab4928501886ea1fb73c271df3024fe570cb908210f275754be00d78d93fc",
+      "bytes": 2134
+    },
+    {
+      "path": "src/applications/login/schemas.py",
+      "sha256": "7feee20d2d350fbac5c1844d5c13042cfae16f4976e5dd1a5ca669b0a4ddb630",
+      "bytes": 433
+    },
+    {
+      "path": "src/applications/users/__init__.py",
+      "sha256": "c85ca54185eba872780f3539e821deb3ab64771b468dffea253d97d42637c8dd",
+      "bytes": 34
+    },
+    {
+      "path": "src/applications/users/controller.py",
+      "sha256": "e14992724e56f96dd2a112bd727773ba7827d7f296a56b281fe0d808f04f7eec",
+      "bytes": 182
+    },
+    {
+      "path": "src/applications/users/router.py",
+      "sha256": "3f9f260c74b7087d15a0420420ef2f5f0170d15bad720ade077f3358ffeeba80",
+      "bytes": 820
+    },
+    {
+      "path": "src/applications/users/schemas.py",
+      "sha256": "de43df293161918dc4d7bd0013e6273dff651a98172cd698f68722134925e6f7",
+      "bytes": 111
+    },
+    {
+      "path": "src/core/__init__.py",
+      "sha256": "ee5ef37c4b5c9db6036bdcfb2547abff58901fff070db1e4419fb92e6415fa65",
+      "bytes": 76
+    },
+    {
+      "path": "src/core/commands.py",
+      "sha256": "38cfcbdcfabe6dc75fb0fa5145b128abcd62e150ed29df40a062e9ca9316feca",
+      "bytes": 1940
+    },
+    {
+      "path": "src/core/manager_db.py",
+      "sha256": "571e7a459b7178e8ae533622e513380790fc60fd7897a4ed375a0c25e8208be6",
+      "bytes": 1654
+    },
+    {
+      "path": "src/core/models/__init__.py",
+      "sha256": "b9a3a5a4e4c13e32fdb0b2771fd8d1bac29ce6f4a700428d071e9e535c1a0a86",
+      "bytes": 248
+    },
+    {
+      "path": "src/core/models/base.py",
+      "sha256": "180db3b109b83965600a9dd7f7b18d1053f8b481526c98b3c6add4c729c9d8bb",
+      "bytes": 137
+    },
+    {
+      "path": "src/core/models/sessions.py",
+      "sha256": "31d9a436296a589eb3693236049f3a5ae0816155eacbe60b8dd881aafaaad470",
+      "bytes": 539
+    },
+    {
+      "path": "src/core/models/users.py",
+      "sha256": "c0f338a895030a1ac05d5eb266e76c2234503a201c9f21a0e5f9dbc8e387bbf4",
+      "bytes": 482
+    },
+    {
+      "path": "src/core/security.py",
+      "sha256": "ea9c2966f8737f82194e18e6a57c38a457328ea7c29ad79233a64e2c7ff84198",
+      "bytes": 4549
+    },
+    {
+      "path": "src/core/session_cleanup.py",
+      "sha256": "47337747a2aea1e348501f5fbdb67bacc301dfc25ee963e3b1875588bc50a662",
+      "bytes": 863
+    },
+    {
+      "path": "src/core/settings.py",
+      "sha256": "13156f215e3af93608e6409e30ef238dc186af594e8e44cf881799f6a3f63931",
+      "bytes": 1816
+    },
+    {
+      "path": "src/main.py",
+      "sha256": "e98f3b605822059b519e9994e6fe378f92fc000fb8f67572a729187ca8c2888c",
+      "bytes": 2324
+    },
+    {
+      "path": "src/scripts/__init__.py",
+      "sha256": "5987b7bc390556d74af024248dee2f401539a88a689ba8198944289c9f2344b6",
+      "bytes": 53
+    },
+    {
+      "path": "src/scripts/cleanup_expired_sessions.py",
+      "sha256": "000242b0896a3f59c65c63543ec820cbce5691052ec7f0700151a5b5655684f4",
+      "bytes": 330
+    },
+    {
+      "path": "tests/__init__.py",
+      "sha256": "a0758940354f9fdceddaea1c88cb5a675644961fba0bf2e71f46c1c37cc23ef7",
+      "bytes": 42
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "2e157af5352abb10e6a99a9d17432a4c9311453d84e52eee075c32f8e5691b96",
+      "bytes": 1259
+    },
+    {
+      "path": "tests/test_admin_cli.py",
+      "sha256": "57d3cb98d3ebf3120f47f54736563a4d4518a6321e2f31bfe481ac51114ebebd",
+      "bytes": 728
+    },
+    {
+      "path": "tests/test_auth.py",
+      "sha256": "bd95819613c68e9044f68fefeb23b3246ec3ddf5615596b1ce0edd9de5aef9f4",
+      "bytes": 3203
+    },
+    {
+      "path": "tests/test_database.py",
+      "sha256": "78c91ee67bdc8878ee5eeea4e977a40eda3d592dcce0b05eb051e52c352dfab2",
+      "bytes": 2652
+    },
+    {
+      "path": "validation/test_architecture_standalone.py",
+      "sha256": "e347855b07d916149c56c0903973d4a963407c5d3c6181fc22947b5e981fe46c",
+      "bytes": 1597
+    },
+    {
+      "path": "validation/test_sqlalchemy_standalone.py",
+      "sha256": "8b7835f412054114a758b1842d431a7b2df59e8df04337e4e393364d3beaea10",
+      "bytes": 2582
+    }
+  ]
+}
