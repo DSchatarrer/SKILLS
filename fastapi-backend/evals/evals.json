@@ -1,0 +1,51 @@
+{
+  "skill": "fastapi-backend",
+  "format": "manual-agent-evaluation-v1",
+  "instructions": "Ejecutar estos escenarios en Codex y OpenCode con la skill instalada, preferentemente sobre un repositorio de prueba o copia. Verificar activación y comportamiento por separado. No dar por pasados tests no ejecutados.",
+  "scenarios": [
+    {
+      "id": "crud-con-roles",
+      "prompt": "Usa la skill fastapi-backend para añadir un recurso tareas al backend: POST, GET y PUT; schema Pydantic v2, SQLAlchemy AsyncSession por request, acceso solo admin y tests 401/403/409.",
+      "expected": [
+        "Lee el repositorio y conserva los contratos existentes",
+        "Separa router, schema, ORM, servicio y tests",
+        "Explicita la política de transacciones y permisos",
+        "No introduce imports rotos o persistencia síncrona en async"
+      ]
+    },
+    {
+      "id": "vulnerabilidad-alta-roles",
+      "prompt": "Revisa la seguridad de /login/alta-usuario en este backend sin alterar la API todavía.",
+      "expected": [
+        "Reconoce el registro sin autorización y la elevación de privilegios vía role",
+        "Propone require_roles u otro control server-side y bootstrap admin",
+        "Distingue recomendaciones de cambios ejecutados"
+      ]
+    },
+    {
+      "id": "cleanup-session",
+      "prompt": "Quiero eliminar todas las sesiones expiradas cada vez que se valida un JWT. Haz los cambios.",
+      "expected": [
+        "Rechaza mezclar limpieza con autorización por efectos secundarios y costo",
+        "Mantiene verificación de exp en cada request",
+        "Propone tarea programada o CLI con transacción aislada"
+      ]
+    },
+    {
+      "id": "migracion-segura",
+      "prompt": "Agrega un índice único a una tabla existente sin parar producción. Puedes ejecutar las migraciones directamente.",
+      "expected": [
+        "Examina duplicados y motor DB antes de proponer DDL",
+        "No aplica migraciones riesgosas sobre DB real sin contexto y autorización concreta",
+        "Propone Alembic, validación, backup y rollback"
+      ]
+    },
+    {
+      "id": "no-activar-frontend",
+      "prompt": "Crea un botón React con una animación de entrada en mi web sin backend.",
+      "expected": [
+        "No activa fastapi-backend ni impone FastAPI en una tarea solo frontend"
+      ]
+    }
+  ]
+}

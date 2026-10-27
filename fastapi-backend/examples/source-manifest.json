@@ -1,0 +1,196 @@
+{
+  "source_archive": "fastapi-main.zip",
+  "source_archive_sha256": "349a5915b2a0228ec0ddf19744fb9b6be18d7d614a95cd074618e07078252772",
+  "source_archive_root": "fastapi-main/backend_async/",
+  "copied_unchanged": true,
+  "file_count": 36,
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "bytes": 241,
+      "sha256": "a8789f4dc5a152d1491418e453559b7a94ee69a6434942c0af8d84e1367c4211"
+    },
+    {
+      "path": "requirements-dev.txt",
+      "bytes": 73,
+      "sha256": "346d913560f519e4f2b9aeb2c9d51b43677ce463e3ad5331f58d5bb5990b1ca8"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 251,
+      "sha256": "8e58dd7b1a1f2dcb504c8e474627c0d44fc1e860bcd477f91811d0668a8b802f"
+    },
+    {
+      "path": "src/__init__.py",
+      "bytes": 25,
+      "sha256": "bb110cde7c2c2d57be9208fcc6ae228b47ae20cf8dc0e1c85bae8e8445defe94"
+    },
+    {
+      "path": "src/applications/__init__.py",
+      "bytes": 30,
+      "sha256": "a98cb77275b0eff800ab60fd8951a457dc6540aa71d02beb49e7012876753ac0"
+    },
+    {
+      "path": "src/applications/info_errores/__init__.py",
+      "bytes": 43,
+      "sha256": "84657f3c9cbb3a27fc881db416a22c0baff4a7b1c59b7f59cd19556c8fdeba51"
+    },
+    {
+      "path": "src/applications/info_errores/controllers.py",
+      "bytes": 1912,
+      "sha256": "413dc24feb3bec40fa7cd49088620f34a8c986c45bc1c222a00a31d8f0196775"
+    },
+    {
+      "path": "src/applications/info_errores/models.py",
+      "bytes": 834,
+      "sha256": "30a6dd71822d558b1e6630ad9a41b40cef5bf81a4df6b705ddbb2c2db2d4ed22"
+    },
+    {
+      "path": "src/applications/login/__init__.py",
+      "bytes": 44,
+      "sha256": "ff835238c45d83bc0ad71cd7957a07785fe9295fea3cd11ac101c27605e5edcb"
+    },
+    {
+      "path": "src/applications/login/controller.py",
+      "bytes": 2885,
+      "sha256": "d051aa48c6f91344450bb5cf07add0d520542b7a227f3090b1e06c037b6e9d9d"
+    },
+    {
+      "path": "src/applications/login/router.py",
+      "bytes": 1097,
+      "sha256": "a9b20060698585d583f76bb3a2f0bddf99f119145d682ee4555aba2803d3557a"
+    },
+    {
+      "path": "src/applications/login/schemas.py",
+      "bytes": 847,
+      "sha256": "c667f0731dea28cd4add9e4f310bd1f5b2258d807f9dfcd9e59f9daa94a69a81"
+    },
+    {
+      "path": "src/applications/pacientes/__init__.py",
+      "bytes": 48,
+      "sha256": "e28c4523ca71cc345a767cef88bb1f11869520badc90abb52a5353341cbe0b8a"
+    },
+    {
+      "path": "src/applications/pacientes/controller.py",
+      "bytes": 3790,
+      "sha256": "4a6c41393f4eb33f094471e29158d7f5f45a24cd15892929ff409a4b4c873ba4"
+    },
+    {
+      "path": "src/applications/pacientes/models.py",
+      "bytes": 907,
+      "sha256": "06bb04d250b1c097253d52ff60003134c9ce638e2ed21552076323b1210f4319"
+    },
+    {
+      "path": "src/applications/pacientes/router.py",
+      "bytes": 1698,
+      "sha256": "ce64e9b97eab61d16ecbbe148e7bd223ba4f98baf42de130b3a511434131ddc4"
+    },
+    {
+      "path": "src/applications/pacientes/schemas.py",
+      "bytes": 946,
+      "sha256": "ca9e1dad3e37f1535a3d973efe517d3b31ed79967a2649634420ce29f4565b84"
+    },
+    {
+      "path": "src/core/__init__.py",
+      "bytes": 30,
+      "sha256": "6ced78f66cea336086c7762f6010c4c516c86ad60f8a5808a97f94b9ba6bf232"
+    },
+    {
+      "path": "src/core/manager_db_async.py",
+      "bytes": 1193,
+      "sha256": "ef69e16ac23c32a8dc948f50ef4bc8bc68c481773bc3775f4d914705991c5304"
+    },
+    {
+      "path": "src/core/models/__init__.py",
+      "bytes": 186,
+      "sha256": "dd86cb8ce586edd4813f608e470a100022b1ccf919134a08ffdf479b1f651168"
+    },
+    {
+      "path": "src/core/models/base.py",
+      "bytes": 157,
+      "sha256": "932be6371b9470382684023153b91bc796a6e57047d937fa85a8a6f8331c12f5"
+    },
+    {
+      "path": "src/core/models/sessions.py",
+      "bytes": 598,
+      "sha256": "1260e65fc786c147508a2bec65957ca51edb8db5f9cc60d7a2447f86329f8c66"
+    },
+    {
+      "path": "src/core/models/users.py",
+      "bytes": 539,
+      "sha256": "00249767144f4cec313e2945f3c9c694708e419c6807ed8144fa85b06b7c9b45"
+    },
+    {
+      "path": "src/core/security.py",
+      "bytes": 2796,
+      "sha256": "22542180b1cf51a125ffd7f630e6617d0e4abdddc446658ae34b9a2bb88c7419"
+    },
+    {
+      "path": "src/core/session_cleanup.py",
+      "bytes": 781,
+      "sha256": "e9bd7b4dcd66b6b1b67a13e6fb1bfc2d493d66f8270769a8a13372d0a6b1e1af"
+    },
+    {
+      "path": "src/core/session_manager.py",
+      "bytes": 895,
+      "sha256": "f732d0c0e7dc6768103b85b9650326a1b7c3a26a5c24bc33e1189456e6129eee"
+    },
+    {
+      "path": "src/core/settings.py",
+      "bytes": 2558,
+      "sha256": "29cdc037e86e82346238556ceadc07eb8ea7c63546902ef5ebeb172c66494a63"
+    },
+    {
+      "path": "src/core/token_utils.py",
+      "bytes": 2042,
+      "sha256": "2d4824b7166fe0217f572b0c33ed10761c451be672da02f58c5e6959c4af73da"
+    },
+    {
+      "path": "src/core/utils.py",
+      "bytes": 309,
+      "sha256": "d79eb605d42c3c44d475d75712adce4a95025970cbc9b089de3dfda85dcbd320"
+    },
+    {
+      "path": "src/main.py",
+      "bytes": 1588,
+      "sha256": "54f47bea7ed4bacb56b85865372b39c58f97af081356b79cc9c21cc0f35e4a40"
+    },
+    {
+      "path": "src/scripts/__init__.py",
+      "bytes": 39,
+      "sha256": "64fa3822020f5b5d2e3078473b92757ec3f63a26afcab1c00228844bd5bb35cb"
+    },
+    {
+      "path": "src/scripts/cleanup_expired_sessions.py",
+      "bytes": 602,
+      "sha256": "8d4d5323a05e8cae10f0dda0f208c1ffe7af5ead9e2aed71b5b5ab033d1418d8"
+    },
+    {
+      "path": "tests/conftest.py",
+      "bytes": 490,
+      "sha256": "52bab7408c097f8d5ca519928fd99557b057642b80812b0d863bf2c2193cb221"
+    },
+    {
+      "path": "tests/test_auth_and_cleanup_async.py",
+      "bytes": 3438,
+      "sha256": "87a9b8ecd9650407394b79303d5f75e14a49f19f0cc575ed19e943a44245cad6"
+    },
+    {
+      "path": "tests/test_authorization_sync_adapter.py",
+      "bytes": 4330,
+      "sha256": "8a971621307099f96303110b7d115c37bcd0cc6e804a0445e93733a0302890b2"
+    },
+    {
+      "path": "tests/test_models_sqlalchemy.py",
+      "bytes": 2119,
+      "sha256": "66e3ba76b701fc885eea3e03ad8e6f0ce6190b3bbe04b6bda3e5ca2a1f0d76aa"
+    }
+  ],
+  "additional_original_file": {
+    "source_path": "fastapi-main/README.md",
+    "copied_path": "examples/source-root-README.md",
+    "sha256": "7c424192ec8714603ca89146117bc1b0509b68af6498265d578b6d88682127fb",
+    "bytes": 2931
+  },
+  "license_note": "backend_async/LICENSE.md: Iberdrola S.A.; restricciones expresas de copia/distribución. La inclusión solicitada no otorga permiso para redistribuir."
+}
