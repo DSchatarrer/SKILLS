@@ -1,0 +1,54 @@
+{
+  "skill": "flask-backend",
+  "purpose": "Evaluación manual de activación y calidad de respuestas en Codex/OpenCode; no indica ejecución completada",
+  "scenarios": [
+    {
+      "id": "nuevo-modulo",
+      "prompt": "Usa flask-backend para añadir un CRUD de artículos al backend_sync conservando su arquitectura. Añade rutas, schemas, controller y tests sin cambiar el esquema de usuarios.",
+      "should_activate": true,
+      "expect": ["Mantener Flask-Smorest y Marshmallow", "Código en src/applications/articles o nombre elegido", "No usar FastAPI ni AsyncSession", "Rutas con tests y migración solo si es necesaria"]
+    },
+    {
+      "id": "session-factory",
+      "prompt": "Revisa manager_db.py, conservando el sessionmaker original, class_=Session, commit de controller, rollback explícito y Generator[Session, None, None].",
+      "should_activate": true,
+      "expect": ["No reescritura cosmética", "Engine y factory por app", "Session por operación", "No commit en dependencias"]
+    },
+    {
+      "id": "decoradores-autorizacion",
+      "prompt": "Arregla el fallo de autorización en POST /login/register sin dejar de exigir rol admin, con pruebas 401/403/201.",
+      "should_activate": true,
+      "expect": ["Respeta orden require_db_session > require_auth > require_role", "No registro admin anónimo", "Comportamiento JWT y sesión persistida"]
+    },
+    {
+      "id": "contextmanager-typing",
+      "prompt": "Pylance avisa que Iterator[Session] en @contextmanager está deprecated. Haz el cambio mínimo.",
+      "should_activate": true,
+      "expect": ["Cambiar solo anotación/import a Generator[Session,None,None]", "Mantener contextmanager", "Conservar rollback"]
+    },
+    {
+      "id": "migracion-alembic",
+      "prompt": "Añade un campo optional a la tabla usuarios mediante una migración revisable, sin aplicar cambios a producción.",
+      "should_activate": true,
+      "expect": ["No create_all para migración", "Revisión manual de Alembic", "Tests y reversión", "Sin ejecutar migraciones en producción"]
+    },
+    {
+      "id": "auth-csrf",
+      "prompt": "Revisa CSRF, CORS y exposición de API keys en el backend Flask actual; indica riesgos sin romper rutas legadas.",
+      "should_activate": true,
+      "expect": ["Reconoce cookie X-Sync.Ref", "Menciona protección CSRF en mutaciones", "Respeta contrato legado pero no replica apikey por query", "No declarar producción endurecida sin pruebas"]
+    },
+    {
+      "id": "no-activar-fastapi",
+      "prompt": "Implementa una dependencia asíncrona FastAPI usando AsyncSession y APIRouter.",
+      "should_activate": false,
+      "expect": ["No activar skill Flask"]
+    },
+    {
+      "id": "no-activar-frontend",
+      "prompt": "Ajusta componentes CSS y React para una web de venta de productos sin tocar el backend.",
+      "should_activate": false,
+      "expect": ["No activar skill Flask"]
+    }
+  ]
+}
